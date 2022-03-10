@@ -3,12 +3,7 @@
 
 double PI = 3.14;
 
-double prompt_double(char prompt[]) {
-    printf("%s", prompt);
-    double userInput = 0;
-    scanf("%lf", &userInput);
-    return userInput;
-}
+double prompt_double(char prompt[]);
 
 int main() {
     // Prompt values, and convert them to SI unit
@@ -23,4 +18,11 @@ int main() {
     printf("Impedance, Z = %.2lf ohms\n", z);
     
     return 0;
+}
+
+double prompt_double(char prompt[]) {
+    printf("%s", prompt);
+    double userInput = 0;
+    scanf("%lf", &userInput);
+    return userInput;
 }
